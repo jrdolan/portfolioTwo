@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>JD</title>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../CSS/project.css">
+
+      <!-- Enable responsive view on mobile devices -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+      
+      <!-- Enable media queries for old IE -->
+      <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+
+   </head>
+   
+   <body class="no-touch">
+      <div id="header">
+         <div id="headerSectionLeft">
+            <p>Project Demo</p>
+            
+         </div>
+         <div id="headerSectionRight">
+            <a href="home.htm">Back</a>
+         </div>
+      </div>
+
+      <div class="wrap">
+                  
+         <div class="box">
+            <div class="boxInner">
+               <p>This project was inspired by the Phial of Galadriel from The Lord of the Rings movies. In The Lord of the Rings mythos, the phial contains the light of a star. In the movies, the phial is wonderful piece of CGI. Here though, it is a tiny, touch-sensitive circuit board tucked away inside a liquor bottle. </p>
+
+               <div class="titleBox">Butterfly</div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="boxInner">
+               <img src="Images/placeholder.png" width="100%" height="100%"/> <!--need these for images that aren't square -->
+               <div class="titleBox">Butterfly</div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="boxInner">
+               <p>There are products out there that generate similar effects, but none truly replicate the magic. Sun jars are solar powered lights and look like contain a glowing orb (hence the name), but the glass is frosted so you know they’re masking the fact that it’s just a lightbulb. Another product works with water bottles similar to nalgenes - but who ever heard of a mystical water bottle? Liquor bottles are difficult to work with because of the size constraints of the neck, but the effect is better for it. </p>
+
+               <div class="titleBox">Butterfly</div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="boxInner">
+               <img src="Images/placeholder.png" />
+               <div class="titleBox">Butterfly</div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="boxInner">
+               <img src="Images/placeholder.png" />
+               <div class="titleBox">Butterfly</div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="boxInner">
+               <img src="Images/placeholder.png" />
+               <div class="titleBox">Butterfly</div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="boxInner">
+               <p> The pcb is just smaller than a dime, and is tuned so that the capacitance sensor can detect a hand touching the neck of the bottle. I use a couple of hearing aid batteries for power since they also need to squeeze into the neck of the bottle. All these components fit into a small plastic cylinder that hangs onto the lip of the bottle. This prevents anything from falling in, and the overhang of the plastic is thin enough that the cap can still be screwed onto the bottle.</p>
+               <div class="titleBox">Butterfly</div>
+            </div>
+         </div>
+          <div class="box">
+            <div class="boxInner">
+               <p>There is nothing inherently mystical about what I’m doing, either. But by using more visually appealing bottles and taking pains to remove the technology from view, I can create a substantially stronger effect and product.</p>
+               <div class="titleBox">Butterfly</div>
+            </div>
+         </div>
+      
+      </div>
+   
+
+  <!-- Add some JavaScript to enable toggling the descriptions when an image is tapped on a touchscreen device -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      // See if this is a touch device
+      if ('ontouchstart' in window)
+      {
+        // Set the correct body class
+        $('body').removeClass('no-touch').addClass('touch');
+        
+        // Add the touch toggle to show text
+        $('div.boxInner img').click(function(){
+          $(this).closest('.boxInner').toggleClass('touchFocus');
+        });
+      }
+    });
+  </script>
+  
+</body>
+
+</html>
